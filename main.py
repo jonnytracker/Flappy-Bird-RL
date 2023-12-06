@@ -10,14 +10,11 @@ import pyautogui
 mouse = Controller()
 from FlappyBirdEnv import FlappyGame
 
-IMAGE_REDUCTION = 100
 
-width = 849
-height = 719
-top = 110
-left = 518
-
-
+width = 0
+height = 0
+top = 0
+left = 0
 game_location = 0
 
 time.sleep(1)
@@ -43,7 +40,7 @@ else:
 
 
 #############################################################################
-env = FlappyGame()
+env = FlappyGame(width, height, top, left)
 
 env.reset()
 

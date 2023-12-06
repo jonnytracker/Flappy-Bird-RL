@@ -20,17 +20,12 @@ from PIL import ImageGrab
 import dxcam
 mouse = Controller()
 
-IMAGE_REDUCTION = 100
-
-width = 849
-height = 719
-top = 110
-left = 518
+IMAGE_REDUCTION = 200
 
 game_location = 0
 
 class FlappyGame(Env):
-    def __init__(self):
+    def __init__(self, width, height, top, left ):
         self.start_time = time.time()
         self.last_check_time = 0
         super().__init__()
@@ -74,6 +69,7 @@ class FlappyGame(Env):
     
     def render(self):     
         cv2.imshow('Game', self.get_observation())
+        cv2.moveWindow('Game', 3333, 500)
         cv2.waitKey(1)      
 
     
