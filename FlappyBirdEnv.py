@@ -69,7 +69,7 @@ class FlappyGame(Env):
     
     def render(self):     
         cv2.imshow('Game', self.get_observation())
-        cv2.moveWindow('Game', 3333, 500)
+        # cv2.moveWindow('Game', 3333, 500)
         cv2.waitKey(1)      
 
     

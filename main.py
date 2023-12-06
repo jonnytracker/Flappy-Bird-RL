@@ -54,8 +54,8 @@ while not keyboard.is_pressed('q'):
         while not terminated:  
             obs, reward,  terminated, truncated , info =  env.step(env.action_space.sample())
             total_reward  += reward
-            env.render()
-            time.sleep(0.001)
+            # env.render()
+            # time.sleep(0.001)
                     
         print('Total Reward for episode {} is {}'.format(episode, total_reward)) 
 
