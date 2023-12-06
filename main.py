@@ -48,7 +48,7 @@ env = FlappyGame()
 env.reset()
 
 
-while keyboard.is_pressed('q') is not True:
+while not keyboard.is_pressed('q'):
     # Random play
     for episode in range(100): 
         obs = env.reset()  
