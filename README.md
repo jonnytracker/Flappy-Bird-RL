@@ -15,4 +15,6 @@ Hosted and maintained by https://twitter.com/mxmcd
 The challenge in external environment is game performance and FPS... 
 
 
+NOTE: the RL is ready to train but the gym environment is not perfect yet
+
    
